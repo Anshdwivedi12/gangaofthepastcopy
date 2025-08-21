@@ -202,37 +202,25 @@
 
 .hero-center-logo {
     position: absolute;
-    /* You might want to adjust this in media queries */
+    top: -40px;        /* 👈 Yahan adjust karo (0 ya 10px bhi rakh sakte ho) */
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
     
     /* --- Responsive Changes --- */
-    width: 90%; /* Use a percentage to make it fluid */
-    max-width: 620px; /* Set a maximum size for large screens */
+    width: 90%;
+    max-width: 620px;
 }
 
-.hero-center-logo img {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-}
 
-/* --- Media Queries for Smaller Screens --- */
 
-/* For tablets */
-@media (max-width: 768px) {
-    .hero-center-logo {
-        /* Adjust vertical position */
-        max-width: 450px; /* Allow a smaller max size */
-    }
-}
 
 /* For mobile phones */
 @media (max-width: 480px) {
-    .hero-center-logo {
-         /* Bring it down further */
-        max-width: 300px; /* Further reduce the size */
-    }
+  .hero-center-logo {
+    top: 10px;   /* mobile me thoda neeche kar diya */
+    max-width: 300px;
+  }
 }
 
 /* =========================================================== */
