@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { MapContainer, TileLayer, GeoJSON, WMSTileLayer, ZoomControl, ScaleControl, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, GeoJSON, WMSTileLayer, ScaleControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-side-by-side/layout.css';
 import 'leaflet-side-by-side/range.css';
 // FIX: Removed unused FaColumns and FaParagraph. FaColumns is re-added for the restored section.
-import { FaTimes, FaChevronLeft, FaChevronRight, FaLayerGroup, FaImages, FaInfoCircle, FaCheckSquare, FaRegSquare, FaColumns, FaRobot, FaChartBar, FaParagraph } from 'react-icons/fa';
+import { FaTimes, FaChevronLeft, FaChevronRight, FaLayerGroup, FaImages, FaInfoCircle, FaCheckSquare, FaRegSquare, FaColumns, FaRobot, FaChartBar } from 'react-icons/fa';
 
 // --- Helper component (unchanged) ---
 const LegendControl = ({ layers, layerStates }) => {

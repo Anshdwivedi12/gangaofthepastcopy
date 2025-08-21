@@ -202,7 +202,7 @@
 
 .hero-center-logo {
     position: absolute;
-    top: -60px; /* You might want to adjust this in media queries */
+    /* You might want to adjust this in media queries */
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -222,7 +222,7 @@
 /* For tablets */
 @media (max-width: 768px) {
     .hero-center-logo {
-        top: -80px; /* Adjust vertical position */
+        /* Adjust vertical position */
         max-width: 450px; /* Allow a smaller max size */
     }
 }
@@ -230,7 +230,7 @@
 /* For mobile phones */
 @media (max-width: 480px) {
     .hero-center-logo {
-        top: -15px; /* Bring it down further */
+         /* Bring it down further */
         max-width: 300px; /* Further reduce the size */
     }
 }
