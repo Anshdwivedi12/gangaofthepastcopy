@@ -103,11 +103,13 @@ const Hero = () => {
     };
 
     return (
+        
         <section className="hero">
-            <Birds />
             <div className="hero-center-logo">
                 <img src={centerLogo} alt="Terraqua UAV Logo" />
             </div>
+            <Birds />
+            
 
             <div className="hero-container">
                 <div className="hero-content">

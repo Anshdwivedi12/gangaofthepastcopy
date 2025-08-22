@@ -202,27 +202,29 @@
 
 .hero-center-logo {
     position: absolute;
-    top: -40px;        /* 👈 Yahan adjust karo (0 ya 10px bhi rakh sakte ho) */
+    top: -80px;              /* Default desktop ke liye */
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    
-    /* --- Responsive Changes --- */
+
     width: 90%;
     max-width: 620px;
 }
 
-
-
-
-/* For mobile phones */
-@media (max-width: 480px) {
-  .hero-center-logo {
-    top: 10px;   /* mobile me thoda neeche kar diya */
-    max-width: 300px;
-  }
+/* For tablets */
+@media (max-width: 992px) {
+    .hero-center-logo {
+        top: -60px;          /* Tablets ke liye */
+        max-width: 500px;
+    }
 }
-
+/* For mobile */
+@media (max-width: 768px) {
+    .hero-center-logo {
+        top: -40px;          /* Mobile ke liye */
+        max-width: 400px;
+    }
+}
 /* =========================================================== */
 /* CSS from Birds.css                                          */
 /* =========================================================== */
